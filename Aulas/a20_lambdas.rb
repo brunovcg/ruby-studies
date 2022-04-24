@@ -1,4 +1,4 @@
-# lambdas são similares aos blocks mas podem ser salvas em variáveis
+# lambdas são similares aos blocks mas podem ser salvas em variáveis, e mais de 1 pode ser passada como argumento
 
 first_lambda = lambda { puts 'my first lambda' }
 second_lambda = -> { puts 'my second lambda' }
@@ -37,3 +37,17 @@ end
 
 numbers = [1, 2, 3, 4]
 my_lambda.call(numbers)
+
+puts nil # * =====================================================
+# lambdas podem ser passados como argumentos metodo
+# pode passar como argumento normal
+
+def foo(teste, f_lambda, s_lambda)
+  f_lambda.call(teste)
+  s_lambda.call
+end
+
+first_lambda = ->(varia) { puts "my first lambda #{varia}" }
+second_lambda = -> { puts 'my second lambda' }
+
+foo('teste', first_lambda, second_lambda)
