@@ -1,7 +1,7 @@
 # ? Hashes
 capitais = {}
 # ou
-capitais2 = Hash.new
+capitais2 = {}
 # ou
 # as keys aceitam numeros e symbols, se usar tipo JSON o : tem que ser colado
 capitais3 = { :a => 'a', 0 => '1' }
@@ -28,7 +28,7 @@ p capitais.keys[0] == :cl
 p :mg.class
 puts nil
 
-#deletando 
+# deletando
 puts '---DELETE---'
 p capitais
 p capitais.delete(:pe)

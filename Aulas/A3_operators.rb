@@ -1,12 +1,11 @@
+# ?       Adição +
 
-#?       Adição +
-      
-#?       Subtração -
-      
-#?       Multiplicação *
-      
-#?       Divisão /
-      
-#?       Resto (módulo) %
-      
-#?       Exponencial **
+# ?       Subtração -
+
+# ?       Multiplicação *
+
+# ?       Divisão /
+
+# ?       Resto (módulo) %
+
+# ?       Exponencial **

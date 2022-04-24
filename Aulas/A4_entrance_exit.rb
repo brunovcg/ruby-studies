@@ -7,4 +7,4 @@ name = gets.chomp
 puts "Hello #{name}"
 
 # exibe o dado stringfy (raw)
-p "show raw"
+p 'show raw'
