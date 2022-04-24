@@ -78,7 +78,7 @@ p array4
 puts nil
 puts nil
 
-#! com HASHES
+# ! com HASHES
 
 hash = {0=> "zero", 1=> "um", 2=> "dois"}
 hash2 = {3=> "tres", 4=> "quatro", 5=> "cinco"}

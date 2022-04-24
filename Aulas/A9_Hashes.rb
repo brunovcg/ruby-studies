@@ -1,20 +1,24 @@
-#? Hashes 
+# ? Hashes
 capitais = {}
-#ou
+# ou
 capitais2 = Hash.new
-#ou
-# as keys aceitam numeros e symbols
-capitais3 = {:a => "a", 0=> "1"}
+# ou
+# as keys aceitam numeros e symbols, se usar tipo JSON o : tem que ser colado
+capitais3 = { :a => 'a', 0 => '1' }
+capitais4 = { c: 'c', 1 => 1, 'd': 'd' }
+
+p capitais4
+puts nil
 
 # Inserindo novo valor
-puts "---Inserir---"
-capitais[:mg] = "BH"
-capitais[:pe] = "REC"
+puts '---Inserir---'
+capitais[:mg] = 'BH'
+capitais[:pe] = 'REC'
 p capitais
 puts nil
 
 # Volta array de Keys ou Values
-puts "---Pegar---"
+puts '---Pegar---'
 p capitais.keys
 p capitais.values
 
@@ -25,16 +29,15 @@ p :mg.class
 puts nil
 
 #deletando 
-puts "---DELETE---"
+puts '---DELETE---'
 p capitais
 p capitais.delete(:pe)
 p capitais
 puts nil
 
-#mias info, length = size
-puts "---INFOS---"
+# mais info, length = size
+puts '---INFOS---'
 p capitais.size
 p capitais.length
 p capitais.empty?
 puts nil
-
